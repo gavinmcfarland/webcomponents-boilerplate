@@ -55,4 +55,4 @@ Whenever you want to use your custom element include it in the page and then ref
 <custom-element></custom-element>
 ````
 
-# When using custom CSS mixins `@apply` you need to use `custom-style`
+When using custom CSS mixins `@apply` you need to use `custom-style`
