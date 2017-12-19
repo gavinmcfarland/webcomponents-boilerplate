@@ -1,0 +1,37 @@
+<!-- import files -->
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<!-- <link rel="import" href="../bower_components/shadycss/apply-shim.html"> -->
+<link rel="import" href="../shared-styles/shared-styles.html">
+
+<!-- dom module -->
+<dom-module id="custom-element">
+    <template>
+        <style include="shared-styles">
+            :host {
+                display: block;
+                @apply --bcolor;
+            }
+        </style>
+        <div>Custom Element</div>
+    </template>
+
+    <script>
+        /** @polymerElement */
+        class CustomElement extends Polymer.Element {
+            static get is() {
+                return 'custom-element';
+            }
+            static get properties() {
+                return {
+                    prop1: {
+                        type: String,
+                        value: 'custom-element'
+                    }
+                };
+            }
+        }
+
+        window.customElements.define(CustomElement.is, CustomElement);
+    </script>
+
+</dom-module>
