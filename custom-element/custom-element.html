@@ -1,13 +1,21 @@
 <!-- import files -->
-<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/polymer/polymer.html">
 <!-- <link rel="import" href="../bower_components/shadycss/apply-shim.html"> -->
-<link rel="import" href="../shared-styles/shared-styles.html">
+<link rel="import" href="../custom-styles.html">
+<link rel="import" href="../shared-styles.html">
 
 <!-- dom module -->
 <dom-module id="custom-element">
     <template>
         <style include="shared-styles">
             :host {
+                --custom-color: orange;
+            }
+
+            :host {
+                @apply --text_right;
+                @apply --gutters_4gu;
+                background-color: var(--custom-color);
                 display: block;
                 @apply --bcolor;
             }

@@ -6,11 +6,12 @@ From project directory install Polymer library
 bower install Polymer/polymer
 ````
 
-Create your component and import polymer dependencies and shared styles
+Create your component and import polymer dependencies and shared or custom styles
 
 ````html
 <link rel="import" href="/bower_components/polymer/polymer-element.html">
 <link rel="import" href="shared-styles.html">
+<link rel="import" href="custom-styles.html">
 
 <!-- dom module -->
 <dom-module id="custom-element">
@@ -52,3 +53,5 @@ Whenever you want to use your custom element include it in the page and then ref
 <body>
 
 <custom-element></custom-element>
+
+# When using custom CSS mixins `@apply` you need to use `custom-style`
